@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-20T12:30:20.508Z",
+    "end": "2024-08-20T12:30:25.424Z",
+    "duration": 4916,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "16b1b3b1-f9c6-444e-9023-78591be671aa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-fluxo-diferente.cy.js",
+      "file": "cypress\\e2e\\login-fluxo-diferente.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0d69dd6-d5d6-44ea-94ad-3e1b852be3a3",
+          "title": "Fluxo de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de texto",
+              "fullTitle": "Fluxo de Login Verifica mensagem de texto",
+              "timedOut": null,
+              "duration": 2184,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('jobinarq@gmail.com', 'Senha123');",
+              "err": {},
+              "uuid": "15c34454-c7d9-4eeb-8a32-25aba18b7e92",
+              "parentUUID": "e0d69dd6-d5d6-44ea-94ad-3e1b852be3a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15c34454-c7d9-4eeb-8a32-25aba18b7e92"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2184,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-20T13:02:44.493Z",
+    "end": "2024-08-20T13:02:50.103Z",
+    "duration": 5610,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4413a840-5b16-4a6f-bb1e-24536ca4257c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ac8f437-3cc1-4049-a2d0-cf8de6d896f2",
+          "title": "Página de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher os campos do login incorretamente e e exibir mensagens de erro ao usuário na página",
+              "fullTitle": "Página de login Deve preencher os campos do login incorretamente e e exibir mensagens de erro ao usuário na página",
+              "timedOut": null,
+              "duration": 2121,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('jobin@.com');\ncy.get('[data-test=\"input-loginPassword\"]').type('senha12345');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "4814654d-2d83-44bc-af19-cfb40eecf5cb",
+              "parentUUID": "9ac8f437-3cc1-4049-a2d0-cf8de6d896f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de falha no login",
+              "fullTitle": "Página de login Verifica mensagem de falha no login",
+              "timedOut": null,
+              "duration": 961,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "646f1d9b-e07b-4a67-8517-cea5281df2a7",
+              "parentUUID": "9ac8f437-3cc1-4049-a2d0-cf8de6d896f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4814654d-2d83-44bc-af19-cfb40eecf5cb",
+            "646f1d9b-e07b-4a67-8517-cea5281df2a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3082,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

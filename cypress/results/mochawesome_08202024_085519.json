@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-20T11:55:16.055Z",
+    "end": "2024-08-20T11:55:19.840Z",
+    "duration": 3785,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b3aba60-420b-42db-94bc-8b78cb71780a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pagina-principal.cy.js",
+      "file": "cypress\\e2e\\pagina-principal.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "12fbaecc-3ec1-437d-a9d0-10728bdb9c45",
+          "title": "Testes na Página principal",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar o título \"Adopet\" na página principal",
+              "fullTitle": "Testes na Página principal Verificar o título \"Adopet\" na página principal",
+              "timedOut": null,
+              "duration": 696,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'AdoPet');",
+              "err": {},
+              "uuid": "b8c901f1-05c2-41b5-8733-910cfee69ee6",
+              "parentUUID": "12fbaecc-3ec1-437d-a9d0-10728bdb9c45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar o texto \"Quem ama adota!\"",
+              "fullTitle": "Testes na Página principal Verificar o texto \"Quem ama adota!\"",
+              "timedOut": null,
+              "duration": 220,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Quem ama adota!').should('be.visible');",
+              "err": {},
+              "uuid": "120e81d1-40df-44eb-a68e-505d498107bf",
+              "parentUUID": "12fbaecc-3ec1-437d-a9d0-10728bdb9c45",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica o texto “Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!”",
+              "fullTitle": "Testes na Página principal Verifica o texto “Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!”",
+              "timedOut": null,
+              "duration": 410,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!').should('be.visible');",
+              "err": {},
+              "uuid": "e770acf1-15a9-46ff-969e-4ee1bca59038",
+              "parentUUID": "12fbaecc-3ec1-437d-a9d0-10728bdb9c45",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b8c901f1-05c2-41b5-8733-910cfee69ee6",
+            "120e81d1-40df-44eb-a68e-505d498107bf",
+            "e770acf1-15a9-46ff-969e-4ee1bca59038"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1326,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
